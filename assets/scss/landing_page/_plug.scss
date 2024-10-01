@@ -1,0 +1,149 @@
+@keyframes mover {
+    0% { transform: translateY(0); 
+    }
+    100% { transform: translateY(-10px);
+    }
+}
+@keyframes mover_2 {
+    0% { transform: translateX(0); 
+    }
+    100% { transform: translateX(-10px);
+    }
+}
+.ptx-lan-rev-plugin-section {
+    overflow: hidden;
+    padding: 90px 0px;
+    margin-bottom: 120px;
+    .container {
+        max-width: 1550px;
+    }
+}
+.revolution-wrap {
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    align-items: center;
+    gap: 50px;
+    .left-content {
+        max-width: 430px;
+    }
+    .free-btn {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 400;
+        color: #000;
+        background: var(--ptx-gradient-1);
+        border-radius: 5px;
+        padding: 5px 25px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    .title {
+        color: #00071A;
+        font-size: 50px;
+        font-weight: 900;
+        line-height: 1.28;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(14, 25, 30, 0.5);
+    }
+    .text {
+        color: #0E191E;
+        display: inline-block;
+        font-size: 22px;
+        line-height: 30px;
+        text-transform: capitalize;
+        font-weight: 400;
+        b {
+            color: #0E191E;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+    .text span {
+        @extend%gradient-text;
+        font-weight: 600;
+        margin-right: 8px;
+    }
+    .pera {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 500;
+        max-width: 390px;
+        margin-bottom: 0;
+    }
+    .icon {
+        width: 140px;
+        height: 140px;
+        border: 5px solid var(--pr-color);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 135px;
+        font-size: 50px;
+        color: var(--pr-color);
+    }
+}
+.ptx-lan-plugin-circle {
+    z-index: 1;
+    width: 387px;
+    height: 387px;
+    border-radius: 100%;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10) inset;
+    background: linear-gradient(90deg, rgba(117, 18, 162, 0.15) 0%, rgba(255, 49, 171, 0.15) 48.53%, rgba(255, 111, 5, 0.15) 100%);
+    &:before {
+        top: 50px;
+        left: 50px;
+        z-index: -1;
+        width: 280px;
+        content: '';
+        height: 280px;
+        border-radius: 100%;
+        position: absolute;
+        background-color: #fff;
+    }
+    .ptx-lan-plug-item {
+        gap: 10px;
+        .inner-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+        }
+        .inner-text {
+            color: #0E191E;
+            line-height: 1.2;
+            font-size: 22px;
+            max-width: 175px;
+            font-weight: 600;
+            font-family: var(--ptx-heading-2);
+        }
+        &.ver_1 {
+            left: 65px;
+            top: -10px;
+            animation: mover 2s infinite  alternate;
+        }
+        &.ver_2 {
+            left: 65px;
+            bottom: -10px;
+            animation: mover 3s infinite  alternate;
+        }
+        &.ver_3,
+        &.ver_4 {
+            .inner-icon {
+                margin: 0 auto;
+            }
+        }
+        &.ver_3 {
+            top: 150px;
+            left: -80px;
+            animation: mover_2 3s infinite  alternate;
+        }
+        &.ver_4 {
+            top: 150px;
+            right: -75px;
+            animation: mover_2 2s infinite  alternate;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.ptx-lan-responsive-section {
+	padding: 120px 0px;
+	.ptx-section-title {
+		margin: 0 auto;
+		max-width: 900px;
+		.ptx-sec-title {
+			margin: 0 auto;
+			max-width: 780px;
+		}
+		ul {
+			margin-top: 30px;
+			li {
+				color: #00071A;
+				font-size: 20px;
+				margin: 0px 15px;
+				img {
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}
+.ptx-lan-responsive-img {
+	margin-top: 50px;
+}

@@ -1,0 +1,44 @@
+.ptx-lan-elementor-section {
+    overflow: hidden;
+    padding: 180px 0px 230px;
+}
+.feature-list-area {
+    margin-top: 30px;
+    .feature-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 10px;
+        li {
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--heading-color);
+            .icon {
+                margin-right: 5px;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 2px solid #B7BABC;
+                    left: -4px;
+                    top: 7px;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
+.elmt-img-wrap {
+    top: -30px;
+    right: -17%;
+    position: absolute;
+    .elmt-icon2 {
+        top: -70px;
+        right: -30px;
+    }
+     .elmt-icon1 {
+        left: 0;
+        bottom: 30px;
+     }
+}

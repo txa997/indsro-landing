@@ -1,0 +1,50 @@
+.ptx-lan-woo-commerce-section {
+	padding: 140px 0px;
+	overflow: hidden;
+	background: linear-gradient(90deg, rgba(254, 110, 0, 0.1) 35.63%, rgba(255, 179, 2, 0.1) 79.89%, rgba(223, 57, 168, 0.01) 100%);
+}
+.woocom-left {
+	.feature-list {
+		margin-top: 30px;
+		li {
+			font-size: 20px;
+			font-weight: 500;
+			margin-bottom: 15px;
+			svg {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+.woocom-img-wrap {
+	margin-right: -190px;
+	position: relative;
+	.bg-shape {
+		display: block;
+		position: absolute;
+		content: "";
+		width: 600px;
+		height: 600px;
+		border-radius: 50%;
+		opacity: 0.12;
+		right: 0;
+		top: -60px;
+		z-index: -1;
+		background: linear-gradient(90deg, rgba(254, 110, 0, 0.6) 35.63%, rgba(255, 179, 2, 0.6) 79.89%, rgba(223, 57, 168, 0.06) 100%);
+	}
+	.popup-1 {
+		left: -80px;
+		bottom: -20px;
+		position: absolute;
+	}
+	.popup-3 {
+		top: -30px;
+		left: 30px;
+		position: absolute;
+	}
+	.popup-2 {
+		top: -60px;
+		right: 75px;
+		position: absolute;
+	}
+}

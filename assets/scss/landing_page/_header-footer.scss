@@ -1,0 +1,16 @@
+.ptx-header-footer-style-section {
+	padding: 135px 100px 50px;
+}
+.header-footer-style-item {
+	margin: 0 auto;
+	max-width: 830px;
+	padding-top: 30px;
+	border-radius: 55px;
+	background: linear-gradient(90deg, rgba(254, 110, 0, 0.05) 35.63%, rgba(255, 181, 2, 0.05) 79.89%, rgba(254, 110, 0, 0.05) 100%), #FFFFFF;
+	.ptx-section-title {
+		padding-bottom: 60px;
+		.ptx-sec-title {
+			font-size: 50px;
+		}
+	}
+}

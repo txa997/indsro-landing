@@ -1,0 +1,42 @@
+.ptx-lan-core-feature-section {
+	padding: 130px 30px;
+	.ptx-section-title {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+}
+.ptx-lan-core-feature-content {
+	padding-top: 50px;
+	.col-lg-3 {
+		&:last-child {
+			.ptx-lan-core-feature-item {
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+.ptx-lan-core-feature-item {
+	position: relative;
+	&:before {
+		top: 0;
+		width: 1px;
+		content: '';
+		right: -15px;
+		height: 100%;
+		position: absolute;
+		background: linear-gradient(90deg, #7512A2 0%, #FF31AB 48.53%, #FF6F05 100%);
+	}
+	h3 {
+		color: #00071A;
+		font-size: 30px;
+		font-weight: 600;
+		padding-bottom: 12px;
+	}
+	p {
+		margin: 0 auto;
+		max-width: 315px;
+		padding-bottom: 30px;
+	}
+}
